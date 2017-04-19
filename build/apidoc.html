@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.object-path.object-path">
+            function <span class="apidocSignatureSpan"></span>object-path
+            <span class="apidocSignatureSpan">(obj)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.object-path.coalesce">
             function <span class="apidocSignatureSpan">object-path.</span>coalesce
             <span class="apidocSignatureSpan">(obj, paths, defaultValue)</span>
@@ -260,6 +269,32 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.object-path" id="apidoc.module.object-path">module object-path</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.object-path.object-path" id="apidoc.element.object-path.object-path">
+        function <span class="apidocSignatureSpan"></span>object-path
+        <span class="apidocSignatureSpan">(obj)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">object-path = function (obj) {
+  return Object.keys(objectPath).reduce(function(proxy, prop) {
+    if(prop === &#x27;create&#x27;) {
+      return proxy;
+    }
+
+<span class="apidocCodeCommentSpan">    /*istanbul ignore else*/
+</span>    if (typeof objectPath[prop] === &#x27;function&#x27;) {
+      proxy[prop] = objectPath[prop].bind(objectPath, obj);
+    }
+
+    return proxy;
+  }, {});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
