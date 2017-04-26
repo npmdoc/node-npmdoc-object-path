@@ -1,6 +1,6 @@
 # npmdoc-object-path
 
-#### api documentation for  [object-path (v0.11.4)](https://github.com/mariocasciaro/object-path)  [![npm package](https://img.shields.io/npm/v/npmdoc-object-path.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-object-path) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-object-path.svg)](https://travis-ci.org/npmdoc/node-npmdoc-object-path)
+#### basic api documentation for  [object-path (v0.11.4)](https://github.com/mariocasciaro/object-path)  [![npm package](https://img.shields.io/npm/v/npmdoc-object-path.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-object-path) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-object-path.svg)](https://travis-ci.org/npmdoc/node-npmdoc-object-path)
 
 #### Access deep object properties using a path
 
@@ -79,7 +79,8 @@
     "scripts": {
         "test": "istanbul cover ./node_modules/mocha/bin/_mocha test.js --report html -- -R spec"
     },
-    "version": "0.11.4"
+    "version": "0.11.4",
+    "bin": {}
 }
 ```
 
